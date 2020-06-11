@@ -1,29 +1,29 @@
 function greet() {
-  console.log('hello, there')
+  console.log('hello, there');
 }
 
-greet()
+greet();
 
 const speak = function () {
-  console.log('good day')
-}
+  console.log('good day');
+};
 
-speak()
+speak();
 
-feeling()
+feeling();
 
 function feeling() {
-  console.log('feeling horrible')
+  console.log('feeling horrible');
 }
 
 const speak0 = function (name) {
-  console.log(`helo, ${name}`)
-}
+  console.log(`helo, ${name}`);
+};
 
-speak0('Rony')
+speak0('Rony');
 
 const speak1 = function (speech) {
-  console.log(`${speech}`)
-}
+  console.log(`${speech}`);
+};
 
-speak1("don't be so serious")
+speak1("don't be so serious");
