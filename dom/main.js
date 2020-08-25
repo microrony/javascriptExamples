@@ -28,3 +28,9 @@
 // for (let i = 0; i < title.length; i++) {
 //   title[i].style.color = 'red';
 // }
+
+let itemsList = document.querySelector('#items');
+
+
+console.log(itemsList.parentNode);
+itemsList.parentNode.style.backgroundColor = 'red';
