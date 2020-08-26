@@ -58,3 +58,14 @@
 // console.log(itemsList.previousElementSibling);
 // console.log(itemsList.firstElementChild);
 // console.log(itemsList.lastElementChild);
+
+// let container = document.querySelector('header .container');
+// let h1 = document.querySelector('header h1');
+// let newDiv = document.createElement('div');
+// let divText = document.createTextNode('hello, world');
+// newDiv.appendChild(divText);
+// newDiv.classList = 'hello';
+// newDiv.id = 'hello';
+// newDiv.setAttribute('title', 'hello div');
+
+// container.insertBefore(newDiv, h1);
