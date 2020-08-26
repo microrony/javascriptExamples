@@ -29,8 +29,32 @@
 //   title[i].style.color = 'red';
 // }
 
-let itemsList = document.querySelector('#items');
+// let itemsList = document.querySelector('#items');
 
 
-console.log(itemsList.parentNode);
-itemsList.parentNode.style.backgroundColor = 'red';
+// console.log(itemsList.parentNode);
+// console.log(itemsList.parentElement);
+// console.log(itemsList.childNodes);
+// console.log(itemsList.children);
+// console.log(itemsList.firstChild);
+// console.log(itemsList.firstElementChild);
+// console.log(itemsList.lastChild);
+// console.log(itemsList.lastElementChild);
+// console.log(itemsList.nextSibling);
+// console.log(itemsList.nextElementSibling);
+// console.log(itemsList.previousSibling);
+// console.log(itemsList.previousElementSibling);
+// console.log(itemsList.parentNode);
+// console.log(itemsList.parentElement);
+// console.log(itemsList.childNodes);
+// console.log(itemsList.children);
+// console.log(itemsList.firstChild);
+// console.log(itemsList.firstElementChild);
+// console.log(itemsList.lastChild);
+// console.log(itemsList.lastElementChild);
+// console.log(itemsList.nextSibling);
+// console.log(itemsList.nextElementSibling);
+// console.log(itemsList.previousSibling);
+// console.log(itemsList.previousElementSibling);
+// console.log(itemsList.firstElementChild);
+// console.log(itemsList.lastElementChild);
