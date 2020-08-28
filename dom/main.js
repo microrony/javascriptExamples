@@ -97,8 +97,15 @@ let h1 = document.getElementById('header-title');
 // button.addEventListener('mouseover', runEvents);
 // button.addEventListener('mouseout', runEvents);
 // button.addEventListener('mousemove', runEvents);
-
-
+button.addEventListener('click', runEvents);
+button.addEventListener('dblclick', runEvents);
+button.addEventListener('mouseup', runEvents);
+button.addEventListener('mousedown', runEvents);
+button.addEventListener('mouseenter', runEvents);
+button.addEventListener('mouseleave', runEvents);
+button.addEventListener('mouseover', runEvents);
+button.addEventListener('mouseout', runEvents);
+button.addEventListener('mousemove', runEvents);
 
 
 function runEvents(e) {
