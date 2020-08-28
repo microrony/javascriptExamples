@@ -70,10 +70,10 @@
 
 // container.insertBefore(newDiv, h1);
 
-let button = document.getElementById('button').addEventListener('click', clicked);
+// let button = document.getElementById('button').addEventListener('click', clicked);
 
-function clicked(e) {
-  console.log(e);
+// function clicked(e) {
+//   console.log(e);
   // console.log(e.target);
   // console.log(e.target.id);
   // console.log(e.target.classList);
@@ -83,4 +83,25 @@ function clicked(e) {
   // console.log(e.offsetX);
   // console.log(e.offsetY);
   // console.log(e.ctrlKey);
+// }
+
+let button = document.getElementById('button');
+let h1 = document.getElementById('header-title');
+
+// button.addEventListener('click', runEvents);
+// button.addEventListener('dblclick', runEvents);
+// button.addEventListener('mousedown', runEvents);
+// button.addEventListener('mouseup', runEvents);
+// button.addEventListener('mouseenter', runEvents);
+// button.addEventListener('mouseleave', runEvents);
+// button.addEventListener('mouseover', runEvents);
+// button.addEventListener('mouseout', runEvents);
+// button.addEventListener('mousemove', runEvents);
+
+
+
+
+function runEvents(e) {
+  console.log('Event Type: ' +e.type);
+  h1.style.color = "rgb("+e.offsetX+","+e.offsetY+", 40)";
 }
