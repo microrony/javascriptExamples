@@ -69,3 +69,18 @@
 // newDiv.setAttribute('title', 'hello div');
 
 // container.insertBefore(newDiv, h1);
+
+let button = document.getElementById('button').addEventListener('click', clicked);
+
+function clicked(e) {
+  console.log(e);
+  // console.log(e.target);
+  // console.log(e.target.id);
+  // console.log(e.target.classList);
+  // console.log(e.type);
+  // console.log(e.clientX);
+  // console.log(e.clientY);
+  // console.log(e.offsetX);
+  // console.log(e.offsetY);
+  // console.log(e.ctrlKey);
+}
