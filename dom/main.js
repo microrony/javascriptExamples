@@ -85,8 +85,8 @@
   // console.log(e.ctrlKey);
 // }
 
-let button = document.getElementById('button');
-let h1 = document.getElementById('header-title');
+// let button = document.getElementById('button');
+// let h1 = document.getElementById('header-title');
 
 // button.addEventListener('click', runEvents);
 // button.addEventListener('dblclick', runEvents);
@@ -97,18 +97,37 @@ let h1 = document.getElementById('header-title');
 // button.addEventListener('mouseover', runEvents);
 // button.addEventListener('mouseout', runEvents);
 // button.addEventListener('mousemove', runEvents);
-button.addEventListener('click', runEvents);
-button.addEventListener('dblclick', runEvents);
-button.addEventListener('mouseup', runEvents);
-button.addEventListener('mousedown', runEvents);
-button.addEventListener('mouseenter', runEvents);
-button.addEventListener('mouseleave', runEvents);
-button.addEventListener('mouseover', runEvents);
-button.addEventListener('mouseout', runEvents);
-button.addEventListener('mousemove', runEvents);
+// button.addEventListener('click', runEvents);
+// button.addEventListener('dblclick', runEvents);
+// button.addEventListener('mouseup', runEvents);
+// button.addEventListener('mousedown', runEvents);
+// button.addEventListener('mouseenter', runEvents);
+// button.addEventListener('mouseleave', runEvents);
+// button.addEventListener('mouseover', runEvents);
+// button.addEventListener('mouseout', runEvents);
+// button.addEventListener('mousemove', runEvents);
 
 
-function runEvents(e) {
-  console.log('Event Type: ' +e.type);
-  h1.style.color = "rgb("+e.offsetX+","+e.offsetY+", 40)";
-}
+// let inputField = document.querySelector('input[type= text]');
+// let form = document.querySelector('form');
+
+// inputField.addEventListener('keydown', runEvents);
+// inputField.addEventListener('keyup', runEvents);
+// inputField.addEventListener('keypress', runEvents);
+// inputField.addEventListener('focus', runEvents);
+// inputField.addEventListener('blur', runEvents);
+// inputField.addEventListener('cut', runEvents);
+// inputField.addEventListener('input', runEvents);
+// inputField.addEventListener('change', runEvents);
+// form.addEventListener('submit', runEvents);
+
+
+// function runEvents(e) {
+//   e.preventDefault();
+//   console.log('Event Type: ' +e.type);
+  // console.log(e.target.value);
+  // document.querySelector('#header-title').innerHTML = '<h3>'+e.target.value+'</h3>';
+
+
+  // h1.style.color = "rgb("+e.offsetX+","+e.offsetY+", 40)";
+// }
