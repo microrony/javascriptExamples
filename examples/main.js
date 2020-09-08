@@ -12,8 +12,11 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-let autoCompaniesName = companies.filter(company => company.category === 'Auto').map(company => company.name);
-console.log(autoCompaniesName);
+// let autoCompaniesName = companies.filter(company => company.category === 'Auto').map(company => company.name);
+// console.log(autoCompaniesName);
+
+let goodCompaniesStartYear = companies.filter(company => (company.end - company.start) >= 10).map(company => company.start);
+console.log(goodCompaniesStartYear);
 
 // for (let i = 0; i < companies.length; i++) {
 //   console.log(companies[i].name);
