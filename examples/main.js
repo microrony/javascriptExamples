@@ -12,8 +12,18 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-let nightCompany = companies.filter(company => company.start === 1999).map(company => company.name);
-console.log(nightCompany);
+// let sortedCompalies = companies.sort((a, b) => a.start > b.start ? 1 : -1);
+let sortedCompalies = companies.sort ((a, b) => {
+  if (a.start > b.start) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+console.log(sortedCompalies);
+
+// let nightCompany = companies.filter(company => company.start === 1999).map(company => company.name);
+// console.log(nightCompany);
 
 // let autoCompaniesName = companies.filter(company => company.category === 'Auto').map(company => company.name);
 // console.log(autoCompaniesName);
