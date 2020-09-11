@@ -12,10 +12,16 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-let agesSum = ages.reduce(function(total, age) {
-  return total + age;
-}, 0);
-console.log(agesSum);
+let totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+console.log(totalYears);
+
+// let agesSum = ages.reduce((total, age) => total + age, 0);
+// console.log(agesSum);
+
+// let agesSum = ages.reduce(function(total, age) {
+//   return total + age;
+// }, 0);
+// console.log(agesSum);
 
 // let sortAges = ages.sort((a, b) => a > b ? 1 : -1);
 // console.log(sortAges);
