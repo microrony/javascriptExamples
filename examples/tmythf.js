@@ -45,13 +45,13 @@ console.log(totalYears);
 // let goodCompaniesStartYear = companies.filter(company => (company.end - company.start) >= 10).map(company => company.start);
 // console.log(goodCompaniesStartYear);
 
-// for (let i = 0; i < companies.length; i++) {
-//   console.log(companies[i].name);
-// }
+for (let i = 0; i < companies.length; i++) {
+  console.log(companies[i].name);
+}
 
-// companies.forEach((company) => {
-//   console.log(company.category);
-// });
+companies.forEach((company) => {
+  console.log(company.category);
+});
 
 // companies.forEach((company) => console.log(company.end));
 
