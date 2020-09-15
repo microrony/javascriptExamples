@@ -1,7 +1,12 @@
-const friends = [
-  {firstName: 'Sattar', lastName: 'Ahmed', birthYear: '1998' },
-  {firstName: 'Mahabubur', lastName: 'Rahman', birthYear: '1999' },
-  {firstName: 'Anis', lastName: 'Khan', birthYear: '2000' }
-];
+//Object Literal
 
-const ages = [22, 21, 20];
+const book1 = {
+  name: 'Book one',
+  author: 'John Doe',
+  year: 2020,
+  getSummary: function() {
+    return `${this.name} was written by ${this.author} in ${this.year}`;
+  }
+};
+
+console.log(book1.getSummary());
