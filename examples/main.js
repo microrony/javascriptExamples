@@ -109,9 +109,17 @@ const bookProtos = {
 };
 
 // Create Object
-const book1 = Object.create(bookProtos);
-book1.title = 'Book One';
-book1.author = 'John Doe';
-book1.year = '2020';
+// const book1 = Object.create(bookProtos);
+// book1.title = 'Book One';
+// book1.author = 'John Doe';
+// book1.year = '2020';
+
+// Another way of doing the same thing
+const book1 = Object.create(bookProtos, {
+  title: {value: 'Book One'},
+  author: {value: 'John Doe'},
+  year: {value: '2020'}
+});
+
 
 console.log(book1);
