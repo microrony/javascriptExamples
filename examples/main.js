@@ -10,3 +10,6 @@ const book1 = {
 };
 
 console.log(book1.getSummary());
+
+console.log(Object.values(book1));
+console.log(Object.keys(book1));
