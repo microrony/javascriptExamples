@@ -50,6 +50,25 @@
 // console.log(book1.revise('2021'));
 // console.log(book1);
 
+// // Constractor
+// function Book(title, author, year) {
+//   this.title = title;
+//   this.author = author;
+//   this.year = year;
+// }
+
+// // Prototypes
+// Book.prototype.getSamarry = function () {
+//   return `${this.title} was written by ${this.author} in ${this.year}`;
+// };
+
+// // Intantiate Objects
+// const book1 = new Book('Book One', 'John Doe', '2020');
+// const book2 = new Book('Book Two', 'John Doe', '2019');
+
+// console.log(book1);
+// console.log(book1.getSamarry());
+
 // Constractor
 function Book(title, author, year) {
   this.title = title;
@@ -57,8 +76,19 @@ function Book(title, author, year) {
   this.year = year;
 }
 
-// Intantiate Objects
-const book1 = new Book('Book One', 'John Doe', '2020');
-const book2 = new Book('Book Two', 'John Doe', '2019');
+// Prototypes
+Book.prototype.getSamarry = function () {
+  return `${this.title} was written by ${this.author} in ${this.year}`;
+};
 
-console.log(book1);
+// Magazine Constractor
+function Magazine(title, author, year, month) {
+  Book.call(this, title, author, year);
+
+  this.month = month;
+}
+
+// Intantiate Magazine
+const mag1 = new Magazine('Mag One', 'John Doe', '2020', 'Jan');
+
+console.log(mag1);
