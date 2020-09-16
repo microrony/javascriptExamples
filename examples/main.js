@@ -97,16 +97,16 @@
 // console.log(mag1);
 
 // Object Of Protos
-const bookProtos = {
-  getSummary: function() {
-    return `${this.title} was written by ${this.author} in ${this.year}`;
-  },
+// const bookProtos = {
+//   getSummary: function() {
+//     return `${this.title} was written by ${this.author} in ${this.year}`;
+//   },
 
-  getAge: function() {
-    const years = new Date().getFullYear() - this.year;
-    return `${this.title} is ${years} years old`;
-  }
-};
+//   getAge: function() {
+//     const years = new Date().getFullYear() - this.year;
+//     return `${this.title} is ${years} years old`;
+//   }
+// };
 
 // Create Object
 // const book1 = Object.create(bookProtos);
@@ -115,11 +115,35 @@ const bookProtos = {
 // book1.year = '2020';
 
 // Another way of doing the same thing
-const book1 = Object.create(bookProtos, {
-  title: {value: 'Book One'},
-  author: {value: 'John Doe'},
-  year: {value: '2020'}
-});
+// const book1 = Object.create(bookProtos, {
+//   title: {value: 'Book One'},
+//   author: {value: 'John Doe'},
+//   year: {value: '2020'}
+// });
 
+
+// console.log(book1);
+
+// Classes
+class Book {
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+
+  getSummary() {
+     return `${this.title} was written by ${this.author} in ${this.year}`;
+  }
+
+  getAge() {
+    const years = new Date().getFullYear() - this.year;
+    return `${this.title} is ${years} years old`;
+  }
+
+}
+
+// Intantiate Object
+const book1 = new Book('Book One', 'John Doe', '2020');
 
 console.log(book1);
