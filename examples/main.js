@@ -77,7 +77,7 @@ function Book(title, author, year) {
 }
 
 // Prototypes
-Book.prototype.getSamarry = function () {
+Book.prototype.getSumarry = function () {
   return `${this.title} was written by ${this.author} in ${this.year}`;
 };
 
@@ -88,7 +88,14 @@ function Magazine(title, author, year, month) {
   this.month = month;
 }
 
+// Inherit Prototype
+Magazine.prototype = Object.create(Book.prototype);
+
 // Intantiate Magazine
 const mag1 = new Magazine('Mag One', 'John Doe', '2020', 'Jan');
 
+// Use Magazine Constructor
+Magazine.prototype.constructor = Magazine;
+
+// console.log(mag1);
 console.log(mag1);
