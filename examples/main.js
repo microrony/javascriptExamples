@@ -26,7 +26,7 @@ function Book(title, author, year) {
   this.year = year;
 }
 
-// Intentiate an Object
+// Intantiate an Object
 const book1 = new Book('Book One', 'John Doe', '2020');
 const book2 = new Book('Book Two', 'John Doe', '2019');
 
