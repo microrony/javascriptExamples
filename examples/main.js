@@ -141,9 +141,15 @@ class Book {
     return `${this.title} is ${years} years old`;
   }
 
+  static topBookStore() {
+    return 'Barnes & Noble';
+  }
+
 }
 
 // Intantiate Object
 const book1 = new Book('Book One', 'John Doe', '2020');
 
-console.log(book1);
+// console.log(book1);
+
+console.log(Book.topBookStore());
