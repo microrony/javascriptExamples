@@ -10,7 +10,7 @@ const book1 = {
 const book2 = {
   title: 'Book Two',
   author: 'Jhon Doe',
-  year: '2020',
+  year: '2019',
   getSammary: function () {
     return `${this.title} was written by ${this.author} in ${this.year}`;
   },
