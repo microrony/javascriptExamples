@@ -65,7 +65,7 @@
 // book1.revise(2020);
 
 // console.log(book1);
-  
+
 // // constructor
 // function Book(title, author, year) {
 //   this.title = title;
@@ -121,7 +121,6 @@
 //   year: {value: '2020'}
 // });
 
-
 // console.log(book1);
 
 // // Classes
@@ -164,7 +163,7 @@ class Book {
   }
 
   getSummary() {
-     return `${this.title} was written by ${this.author} in ${this.year}`;
+    return `${this.title} was written by ${this.author} in ${this.year}`;
   }
 }
 
