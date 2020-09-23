@@ -69,26 +69,28 @@
 // console.log(book1);
 // console.log(book1.getSamarry());
 
-// Constractor
-function Book(title, author, year) {
-  this.title = title;
-  this.author = author;
-  this.year = year;
-}
+// // Constractor
+// function Book(title, author, year) {
+//   this.title = title;
+//   this.author = author;
+//   this.year = year;
+// }
 
-// Prototypes
-Book.prototype.getSumarry = function () {
-  return `${this.title} was written by ${this.author} in ${this.year}`;
-};
+// // Prototypes
+// Book.prototype.getSumarry = function () {
+//   return `${this.title} was written by ${this.author} in ${this.year}`;
+// };
 
-function Magazine(title, author, year, month) {
-  Book.call(this, title, author, year);
+// function Magazine(title, author, year, month) {
+//   Book.call(this, title, author, year);
 
-  this.month = month;
-}
+//   this.month = month;
+// }
 
-Magazine.prototype = Object.create(Book.prototype);
+// Magazine.prototype = Object.create(Book.prototype);
 
-const mag1 = new Magazine('Mag One', 'John Doe', '2020', 'Jan');
+// const mag1 = new Magazine('Mag One', 'John Doe', '2020', 'Jan');
 
-console.log(mag1.getSumarry());
+// console.log(mag1.getSumarry());
+
+
