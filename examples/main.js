@@ -94,3 +94,22 @@
 // console.log(mag1.getSumarry());
 
 
+const book1 = {
+  title: 'Book One',
+  author: 'John Doe',
+  year: 2020,
+  getSummary: function() {
+    return `${this.title} is written by ${this.author} in ${this.year}`;
+  }
+};
+
+const book2 = {
+  title: 'Book Two',
+  author: 'John Doe',
+  year: 2019,
+  getSummary: function() {
+    return `${this.title} is written by ${this.author} in ${this.year}`;
+  }
+};
+
+console.log(book1);
