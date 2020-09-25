@@ -6,9 +6,14 @@ const color = document.querySelector('.color');
 const body = document.body;
 
 // functions
+const getRandomNumber = () => {
+  return Math.floor(Math.random() * colors.length);
+}
+
 const flipColor = () => {
   // get random number 0 - 3
-  const randomNumber = 2;
+  const randomNumber = getRandomNumber();
+  console.log(randomNumber);
   body.style.backgroundColor = colors[randomNumber];
   color.textContent = colors[randomNumber];
 }
