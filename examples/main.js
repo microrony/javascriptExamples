@@ -4,16 +4,27 @@
 
 // getValue();
 
-let displayColors = function (message, ...colors) {
-  console.log(message);
+// let displayColors = function (message, ...colors) {
+//   console.log(message);
 
+//   for (let i in colors) {
+//     console.log(colors[i]);
+//   }
+// };
+
+// let message = 'list of colors';
+
+// displayColors(message, 'red');
+// displayColors(message, 'red', 'blue');
+// displayColors(message, 'red', 'blue', 'green');
+
+let displayColors = (note, ...colors) => {
+  console.log(note);
   for (let i in colors) {
     console.log(colors[i]);
   }
 };
 
-let message = 'list of colors';
+let note = 'learning rest operator';
 
-displayColors(message, 'red');
-displayColors(message, 'red', 'blue');
-displayColors(message, 'red', 'blue', 'green');
+displayColors(note, 'red', 'blue', 'green');
