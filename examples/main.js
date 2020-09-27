@@ -18,13 +18,14 @@
 // displayColors(message, 'red', 'blue');
 // displayColors(message, 'red', 'blue', 'green');
 
-let displayColors = (note, ...colors) => {
+let displayColors = function (note, ...colors) {
   console.log(note);
+
   for (let i in colors) {
     console.log(colors[i]);
   }
 };
 
-let note = 'learning rest operator';
+let note = 'learning rest oparator';
 
-displayColors(note, 'red', 'blue', 'green');
+displayColors(note, 'red');
