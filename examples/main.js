@@ -18,7 +18,20 @@
 // displayColors(message, 'red', 'blue');
 // displayColors(message, 'red', 'blue', 'green');
 
-let displayColors = function (note, ...colors) {
+// let displayColors = function (note, ...colors) {
+//   console.log(note);
+
+//   for (let i in colors) {
+//     console.log(colors[i]);
+//   }
+// };
+
+// let note = 'learning rest oparator';
+
+// let colorsArray = ['orange', 'blue', 'red'];
+// displayColors(note, ...colorsArray);
+
+let displayColors = (note, ...colors) => {
   console.log(note);
 
   for (let i in colors) {
@@ -26,7 +39,7 @@ let displayColors = function (note, ...colors) {
   }
 };
 
-let note = 'learning rest oparator';
+let note = 'learning spread operator';
 
-let colorsArray = ['orange', 'blue', 'red'];
+let colorsArray = ['orange', 'red', 'blue', 'yellow'];
 displayColors(note, ...colorsArray);
