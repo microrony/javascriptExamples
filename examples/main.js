@@ -76,9 +76,15 @@
 // console.log(person);
 
 // destructuring array
-let me = ['mahabubur', 'rahman', 'male'];
-let [fname, lname, gender] = me;
+// let me = ['mahabubur', 'rahman', 'male'];
 
+let me = {
+  fname: 'mahabubur',
+  lname: 'rahman',
+  gender: 'male',
+};
+
+let { fname, lname, gender } = me;
 console.log(fname);
 console.log(lname);
 console.log(gender);
