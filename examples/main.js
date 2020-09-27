@@ -48,29 +48,37 @@
 // displayColors(note, ...colorsArray);
 
 // object literals
-let firstName = 'mahabubur';
-let lastName = 'rahman';
+// let firstName = 'mahabubur';
+// let lastName = 'rahman';
 
-let person = {
-  firstName,
-  lastName,
-};
+// let person = {
+//   firstName,
+//   lastName,
+// };
 
-let createPerson = (firstName, lastName, age) => {
-  let fullName = `${firstName} ${lastName}`;
-  return {
-    firstName,
-    lastName,
-    fullName,
-    isSenior() {
-      return age > 18;
-    },
-  };
-};
+// let createPerson = (firstName, lastName, age) => {
+//   let fullName = `${firstName} ${lastName}`;
+//   return {
+//     firstName,
+//     lastName,
+//     fullName,
+//     isSenior() {
+//       return age > 18;
+//     },
+//   };
+// };
 
-let p = createPerson('mahabubur', 'rahman', 20);
-console.log(p.firstName);
-console.log(p.lastName);
-console.log(p.fullName);
-console.log(p.isSenior());
-console.log(person);
+// let p = createPerson('mahabubur', 'rahman', 20);
+// console.log(p.firstName);
+// console.log(p.lastName);
+// console.log(p.fullName);
+// console.log(p.isSenior());
+// console.log(person);
+
+// destructuring array
+let me = ['mahabubur', 'rahman', 'male'];
+let [fname, lname, gender] = me;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
