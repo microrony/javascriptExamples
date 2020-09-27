@@ -28,4 +28,5 @@ let displayColors = function (note, ...colors) {
 
 let note = 'learning rest oparator';
 
-displayColors(note, 'red');
+let colorsArray = ['orange', 'blue', 'red'];
+displayColors(note, ...colorsArray);
