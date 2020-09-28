@@ -195,6 +195,30 @@
 
 // console.log(book1);
 
+// // classes
+// class Book {
+//   constructor(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//   }
+//   getSummary() {
+//     return `${this.title} is written by ${this.author} in ${this.year}`;
+//   }
+
+//   static topBookStore() {
+//     return 'Barnes & Noble';
+//   }
+// }
+
+// // Instantiate an object
+// const book1 = new Book('Book One', 'John Doe', '2020');
+// const book2 = new Book('Book Two', 'John Doe', '2019');
+
+// console.log(book1);
+// console.log(book2.getSummary());
+// console.log(Book.topBookStore());
+
 // classes
 class Book {
   constructor(title, author, year) {
@@ -202,19 +226,32 @@ class Book {
     this.author = author;
     this.year = year;
   }
+
   getSummary() {
     return `${this.title} is written by ${this.author} in ${this.year}`;
   }
 
   static topBookStore() {
-    return 'Barnes & Noble';
+    console.log('Noble');
   }
 }
 
-// Instantiate an object
+// instantiate object
 const book1 = new Book('Book One', 'John Doe', '2020');
-const book2 = new Book('Book Two', 'John Doe', '2019');
 
 console.log(book1);
-console.log(book2.getSummary());
-console.log(Book.topBookStore());
+Book.topBookStore();
+
+//Magazine Subclass
+class Magazine extends Book {
+  constructor(title, author, year, month) {
+    super(title, author, year);
+
+    this.month = month;
+  }
+}
+
+// Instantiate Magazine
+const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
+console.log(mag1);
+console.log(mag1.getSummary());
