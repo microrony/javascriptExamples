@@ -91,6 +91,36 @@
 // console.log(book1);
 // console.log(book2.getSummary());
 
+// // constructor
+// function Book(title, author, year) {
+//   this.title = title;
+//   this.author = author;
+//   this.year = year;
+// }
+
+// // ptototype
+// Book.prototype.getSummary = function () {
+//   return `${this.title} is written by ${this.author} in ${this.year}`;
+// };
+
+// // magazine constructor
+// function Magazine(title, author, year, month) {
+//   Book.call(this, title, author, year);
+
+//   this.month = month;
+// }
+
+// // inherit prototype
+// Magazine.prototype = Object.create(Book.prototype);
+
+// // instantiate magazine object
+// const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
+
+// // use magazine constructor
+// Magazine.prototype.constructor = Magazine;
+
+// console.log(mag1);
+
 // constructor
 function Book(title, author, year) {
   this.title = title;
@@ -98,12 +128,12 @@ function Book(title, author, year) {
   this.year = year;
 }
 
-// ptototype
+// prototype
 Book.prototype.getSummary = function () {
   return `${this.title} is written by ${this.author} in ${this.year}`;
 };
 
-// magazine constructor
+// Magazine constructor
 function Magazine(title, author, year, month) {
   Book.call(this, title, author, year);
 
@@ -113,10 +143,10 @@ function Magazine(title, author, year, month) {
 // inherit prototype
 Magazine.prototype = Object.create(Book.prototype);
 
+//use magazine constructor
+Magazine.prototype.constructor = Magazine;
+
 // instantiate magazine object
 const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
-
-// use magazine constructor
-Magazine.prototype.constructor = Magazine;
 
 console.log(mag1);
