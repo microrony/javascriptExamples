@@ -219,6 +219,43 @@
 // console.log(book2.getSummary());
 // console.log(Book.topBookStore());
 
+// // classes
+// class Book {
+//   constructor(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//   }
+
+//   getSummary() {
+//     return `${this.title} is written by ${this.author} in ${this.year}`;
+//   }
+
+//   static topBookStore() {
+//     console.log('Noble');
+//   }
+// }
+
+// // instantiate object
+// const book1 = new Book('Book One', 'John Doe', '2020');
+
+// console.log(book1);
+// Book.topBookStore();
+
+// //Magazine Subclass
+// class Magazine extends Book {
+//   constructor(title, author, year, month) {
+//     super(title, author, year);
+
+//     this.month = month;
+//   }
+// }
+
+// // Instantiate Magazine
+// const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
+// console.log(mag1);
+// console.log(mag1.getSummary());
+
 // classes
 class Book {
   constructor(title, author, year) {
@@ -242,7 +279,7 @@ const book1 = new Book('Book One', 'John Doe', '2020');
 console.log(book1);
 Book.topBookStore();
 
-//Magazine Subclass
+// Magazine subclasses
 class Magazine extends Book {
   constructor(title, author, year, month) {
     super(title, author, year);
@@ -251,7 +288,8 @@ class Magazine extends Book {
   }
 }
 
-// Instantiate Magazine
+// Instentiate Magazine
 const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
+
 console.log(mag1);
 console.log(mag1.getSummary());
