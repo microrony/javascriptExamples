@@ -325,3 +325,4 @@
 
 // console.log(mag1);
 // console.log(mag1.getSummary());
+
