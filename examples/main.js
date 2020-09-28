@@ -256,39 +256,71 @@
 // console.log(mag1);
 // console.log(mag1.getSummary());
 
-// classes
-class Book {
-  constructor(title, author, year) {
-    this.title = title;
-    this.author = author;
-    this.year = year;
-  }
+// // classes
+// class Book {
+//   constructor(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//   }
 
-  getSummary() {
-    return `${this.title} is written by ${this.author} in ${this.year}`;
-  }
+//   getSummary() {
+//     return `${this.title} is written by ${this.author} in ${this.year}`;
+//   }
 
-  static topBookStore() {
-    console.log('Noble');
-  }
+//   static topBookStore() {
+//     console.log('Noble');
+//   }
+// }
+
+// // instantiate object
+// const book1 = new Book('Book One', 'John Doe', '2020');
+
+// console.log(book1);
+// Book.topBookStore();
+
+// // Magazine subclasses
+// class Magazine extends Book {
+//   constructor(title, author, year, month) {
+//     super(title, author, year);
+
+//     this.month = month;
+//   }
+// }
+
+// // Instentiate Magazine
+// const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
+
+// console.log(mag1);
+// console.log(mag1.getSummary());
+
+// constructor
+function Book(title, author, year) {
+  this.title = title;
+  this.author = author;
+  this.year = year;
 }
 
-// instantiate object
+Book.prototype.getSummary = function () {
+  return `${this.title} is written by ${this.author} in ${this.year}`;
+};
+
+// instantiate an object
 const book1 = new Book('Book One', 'John Doe', '2020');
 
 console.log(book1);
-Book.topBookStore();
 
-// Magazine subclasses
-class Magazine extends Book {
-  constructor(title, author, year, month) {
-    super(title, author, year);
+// magazine constructor
+function Magazine(title, author, year, month) {
+  Book.call(this, title, author, year);
 
-    this.month = month;
-  }
+  this.month = month;
 }
 
-// Instentiate Magazine
+Magazine.prototype = Object.create(Book.prototype);
+Magazine.prototype.constructor = Magazine;
+
+// instantiate objecct
 const mag1 = new Magazine('Magazine One', 'John Doe', '2020', 'Jan');
 
 console.log(mag1);
