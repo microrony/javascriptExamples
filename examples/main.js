@@ -5,4 +5,8 @@ const video = {
   }
 };
 
-video.play();
+video.stop = function() {
+  console.log(this);
+}
+
+video.stop();
