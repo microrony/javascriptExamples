@@ -1,11 +1,8 @@
 const video = {
-  title: 'a',
-  tags: ['a', 'b', 'c'],
-  showTags() {
-    this.tags.forEach(tag => {
-      console.log(tag)
-    })
+  tilte: 'a',
+  play() {
+    console.log(this);
   }
-};
+}
 
-video.showTags();
+video.play();
