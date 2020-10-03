@@ -5,8 +5,9 @@ const video = {
   }
 };
 
-video.stop = function() {
+function Video(title) {
+  this.title = title;
   console.log(this);
 }
 
-video.stop();
+const v = new Video('b');
