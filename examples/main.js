@@ -12,6 +12,5 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-
-const eightiesCompanies = companies.filter(company => company.start >= 1980 && company.end <= 1999);
-console.log(eightiesCompanies);
+const lastedTenYears = companies.filter(company => company.end - company.start >= 10);
+console.log(lastedTenYears);
