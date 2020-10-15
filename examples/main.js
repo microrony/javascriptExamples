@@ -13,11 +13,22 @@ function getPosts() {
   }, 1000);
 }
 
-function createPost(post, callback) {
-  setTimeout(() => {
-    posts.push(post);
-    callback();
-  }, 2000);
+function createPost(post) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      posts.push(post);
+
+      const error = true;
+
+      if (!error) {
+        resolve();
+      } else {
+        reject('Error: something wrong');
+      }
+    }, 2000);
+  });
 }
 
-createPost({ title: 'Post Three', body: 'This is post tree' }, getPosts);
+createPost({ title: 'Post Three', body: 'This is post tree' })
+  .then(getPosts)
+  .catch(err => console.log(err));
