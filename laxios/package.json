@@ -1,5 +1,5 @@
 {
-  "name": "axios",
+  "name": "laxios",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Mahabubur Rahman",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
 }
