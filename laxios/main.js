@@ -1,3 +1,6 @@
+// AXIOS GLOBALS
+axios.defaults.headers.common['X-Auth-Token'] = 'sometoker';
+
 // GET REQUEST
 function getTodos() {
   // axios({
