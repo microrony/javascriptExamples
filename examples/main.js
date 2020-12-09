@@ -1,29 +1,10 @@
-// function fibonacci(num) {
-//   let a = 1, b = 0, temp;
-//   let arr = [];
-//   while (num >= 0) {
-//     temp = a;
-//     a = a + b;
-//     b = temp;
-//     num--;
-//     if (b <= num) {
-//       arr.push(b);
-//     }
-//   }
-
-//   console.log(arr)
-
-//   return arr.reduce((a, b) => a + b);
-// }
-
-// console.log(fibonacci(1000));
-// console.log((987 <= 1000))
-
-function fibonacci(num) {
-  if (num <= 1) return 1;
-  let fib = fibonacci(num - 1) + fibonacci(num - 2);
-  console.log(fib)
-  return fib;
+function addUp(num) {
+  let result = 0;
+  for (let i = num; i >= 1; i--) {
+    console.log(i)
+    result += i;
+  }
+  return result;
 }
 
-console.log(fibonacci(10));
+console.log(addUp(5))
