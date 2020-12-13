@@ -1,10 +1,11 @@
-function addUp(num) {
-  let result = 0;
-  for (let i = num; i >= 1; i--) {
-    console.log(i)
-    result += i;
-  }
-  return result;
-}
+const request = new XMLHttpRequest();
 
-console.log(addUp(5))
+request.addEventListener('readystatechange', () => {
+  // console.log(request, request.readyState);
+  if(request.readyState === 4) {
+    console.log(request.responseText)
+  }
+});
+
+request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
+request.send();
