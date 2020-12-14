@@ -10,7 +10,7 @@ const getTodos = (resource, callback) => {
     }
   })
 
-  request.open('GET', resource)
+  request.open('GET', resource);
   request.send()
 }
 
