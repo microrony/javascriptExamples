@@ -1,3 +1,0 @@
-function stackBoxes(n) {
-	return n * n;
-}
