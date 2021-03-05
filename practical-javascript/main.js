@@ -4,15 +4,15 @@
 // console.warn('A warning');
 // console.dir(document);
 
-// console.table([{name:'John', email:'test@test.com', age:33}]);
+// console.table([{ name: 'John', email: 'test@test.com', age: 33 }])
 
-// console.clear();
+// console.clear()
 
-// console.group('Say Hello');
-//   console.log('Hello Brad');
-//   console.log('Hello John');
-//   console.log('Hello Sally');
-// console.groupEnd('Say Hello');
+// console.group('Say Hello')
+// console.log('Hello Brad')
+// console.log('Hello John')
+// console.log('Hello Sally')
+// console.groupEnd('Say Hello')
 
 // console.time('Run Loop');
 // for (var i = 0; i < 20000; i++) {
@@ -30,7 +30,7 @@
 
 //   // Load Github Users
 //   function loadUsers(){
-//       var xhr = new XMLHttpRequest();
+//      var xhr = new XMLHttpRequest();
 //       xhr.open('GET', 'https://api.github.com/users', true);
 
 //       xhr.onload = function(){
@@ -64,3 +64,7 @@
 
 // Set cookie
 // document.cookie = 'username=John Doe'
+let rony = 'rony';
+let satter = 'sattar';
+let raju = 'raju';
+rony = 'roney';
