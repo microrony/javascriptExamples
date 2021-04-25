@@ -1,10 +1,18 @@
 var todos = ['Item 1', 'Item 2', 'Item 3'];
 
-console.log(todos);
-
-function add(newItem) {
-  todos.push(newItem);
+function add(todo) {
+  todos.push(todo);
   console.log(todos);
 }
 
-add('another item');
+function edit(position, todo) {
+  todos[position] = todo;
+  console.log(todos);
+}
+
+function remove(position) {
+  todos.splice(position, 1);
+  console.log(todos);
+}
+
+remove(0);
