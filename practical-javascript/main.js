@@ -2,8 +2,9 @@ var todos = ['Item 1', 'Item 2', 'Item 3'];
 
 console.log(todos);
 
-todos.push('Item 4');
+function add(newItem) {
+  todos.push(newItem);
+  console.log(todos);
+}
 
-todos[0] = 'Item 1 updated';
-
-todos.splice(0, 1);
+add('another item');
