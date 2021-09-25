@@ -1,11 +1,15 @@
-let string = 'hello';
+let string = 'racecar';
 
-function reverseString(input) {
-  if (input === '') {
-    return '';
+function func(param) {
+  if (param.length === 0 || param.length === 1) {
+    return true;
   }
 
-  return reverseString(input.substring(1)) + input.charAt(0);
+  if (param.charAt(0) === param.charAt(param.length - 1)) {
+    return func(param.substring(1, param.length - 1));
+  }
+
+  return false;
 }
 
-console.log(reverseString(string));
+console.log(func(string));
