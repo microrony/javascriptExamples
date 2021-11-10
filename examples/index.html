@@ -4,8 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
+		<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src="main.js"></script>
+
+		<div class="btn-container">
+			<button class="btn show-all" data-tab="all">show all</button>
+			<button class="btn car" data-tab="car">cars</button>
+			<button class="btn movie" data-tab="movie">movies</button>
+			<button class="btn color" data-tab="color">colors</button>
+		</div>
+	
+		<div class="container">
+			<div class="filtered-div" id="color" data-color="color">red</div>
+			<div class="filtered-div" id="car" data-car="car">bmw m4</div>
+			<div class="filtered-div" id="car" data-car="car">audi r8</div>
+			<div class="filtered-div" id="color" data-color="color">blue</div>
+			<div class="filtered-div" id="movie" data-movie="movie">the wolf of Wall street</div>
+			<div class="filtered-div" id="movie" data-movie="movie">the fast and the furious</div>
+			<div class="filtered-div" id="color" data-color="color">red</div>
+			<div class="filtered-div" id="car" data-car="car">bmw m4</div>
+			<div class="filtered-div" id="car" data-car="car">audi r8</div>
+			<div class="filtered-div" id="color" data-color="color">blue</div>
+			<div class="filtered-div" id="movie" data-movie="movie">the wolf of Wall street</div>
+			<div class="filtered-div" id="movie" data-movie="movie">the fast and the furious</div>
+		</div>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
